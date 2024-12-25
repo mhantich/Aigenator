@@ -46,8 +46,8 @@ const Display: React.FC<ContentTemplateCardsProps> = ({ contentTemplates }) => {
   return (
 <>
 {contentTemplates.map((template) => (
-      <Link href={`/dashboard/contentTemplates/${template.slug}`} passHref>
-  <Card key={template.slug} className="overflow-hidden">
+      <Link key={template.slug} href={`/dashboard/contentTemplates/${template.slug}`} passHref>
+  <Card  className="overflow-hidden">
     <CardContent className="p-0">
        <Image
         src='/promemberscall.png'

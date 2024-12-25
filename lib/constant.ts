@@ -5,7 +5,6 @@ import Home from '@/public/icons/home'
 import Payment from '@/public/icons/payment'
 import Settings from '@/public/icons/settings'
 import Workflows from '@/public/icons/workflows'
-import { Connection } from './types'
 
 export const clients = [...new Array(10)].map((client, index) => ({
   href: `/${index + 1}.png`,
@@ -146,6 +145,17 @@ export const EditorCanvasDefaultCardTypes = {
     type: 'Action',
   },
 }
+
+type Connection = {
+  title: string;
+  description: string;
+  image: string;
+  connectionKey: string;
+  alwaysTrue?: boolean; // Optional if not all objects have this property
+  accessTokenKey?:string;
+  slackSpecial?:boolean
+
+}; 
 
 export const CONNECTIONS: Connection[] = [
   {

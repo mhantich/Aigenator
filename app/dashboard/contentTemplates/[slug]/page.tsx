@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useEffect, useRef, useState } from "react";
+import React, { useState } from "react";
 import { useParams } from "next/navigation";
 import { contentTemplates } from "@/lib/Inputs";
 import { useForm, FieldError, Merge, FieldErrorsImpl } from "react-hook-form";
@@ -19,12 +19,8 @@ const Page = () => {
 
   const filtered = contentTemplates.filter((item) => item.slug === params.slug);
 
-  if (filtered.length === 0) {
-    return <div>Content not found</div>;
-  }
-
-  const formInputs = filtered[0].formInputs;
-
+  // Define schema and useForm outside of conditionals
+  const formInputs = filtered.length > 0 ? filtered[0].formInputs : [];
   const schemaObject = formInputs.reduce((acc, input) => {
     switch (input.type) {
       case "text":
@@ -65,6 +61,10 @@ const Page = () => {
   } = useForm<FormData>({
     resolver: zodResolver(schema),
   });
+
+  if (filtered.length === 0) {
+    return <div>Content not found</div>;
+  }
 
   const onSubmit = async (data: any) => {
     try {
