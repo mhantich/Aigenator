@@ -112,8 +112,8 @@ const Page = () => {
   };
 
   return (
-    <div className="container">
-      <div className="grid flex-1 gap-4 p-4 sm:px-6 sm:py-0 md:gap-8 grid-cols-1 lg:grid-cols-3 w-full">
+    <div className="">
+      <div className="grid flex-1 gap-4  sm:px-2 sm:py-0 md:gap-8 grid-cols-1 lg:grid-cols-3 w-full">
         <div className="bg-gray-100 p-4">
           <div className="text-center mb-1">
             <h1 className="capitalize text-2xl font-medium">
