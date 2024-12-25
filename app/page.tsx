@@ -11,36 +11,10 @@ import { ContainerScroll } from "@/components/container-scroll-animation";
 import Image from "next/image";
 import { BentoGridThirdDemo } from "@/components/BentoGridThirdDemo";
 import Footer from "@/components/Footer";
+import Navbar from "@/components/NavBar";
 
 export default function Home() {
-  const Navbar = () => {
-    return (
-      <header className="w-full bg-white fixed py-2 z-50 flex justify-between items-center px-10">
-        <div className="text-2xl font-bold">xPage</div>
-        <nav className="space-x-8">
-          <a href="#" className="text-lg text-gray-700">
-            Product
-          </a>
-          <a href="#" className="text-lg text-gray-700">
-            Features
-          </a>
-          <a href="#" className="text-lg text-gray-700">
-            Pricing
-          </a>
-          <a href="#" className="text-lg text-gray-700">
-            Testimonials
-          </a>
-        </nav>
-        <div className="space-x-4">
-          <Button variant="default">
-          <Link href="/dashboard">
-          Get started
-        </Link>
-             </Button>
-        </div>
-      </header>
-    );
-  };
+
   return (
     <main style={{ backgroundColor: "#181818" }}className="overflow-x-hidden   ">
       <Navbar />
