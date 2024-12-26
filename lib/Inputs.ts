@@ -2,6 +2,7 @@ import { ContentTemplate } from "@/app/dashboard/_components/Display";
 export const contentTemplates: ContentTemplate[] = [
   {
     title: "Historical Summer Event Spotlight",
+    images:'/tempImages/summer.png',
     "description": "Generate engaging content about significant historical events that occurred during summer months, perfect for seasonal blog posts, social media content, or educational materials.",
     "formInputs": [
       {
@@ -63,6 +64,8 @@ export const contentTemplates: ContentTemplate[] = [
   },
   {
     title: "SEO-Optimized Twitter Post",
+    images:'/tempImages/twitter.png',
+
     description:
       "Create highly engaging and impactful tweets optimized for SEO, tailored to boost visibility on both Twitter and Google search results.",
     formInputs: [
@@ -126,6 +129,8 @@ export const contentTemplates: ContentTemplate[] = [
   },
   {
     "title": "SEO-Optimized Website Landing Page",
+    images:'/tempImages/webpageSoe.png',
+
     "description": "Design a powerful landing page optimized for search engines, aimed at converting visitors and enhancing online visibility.",
     "formInputs": [
       {
@@ -179,6 +184,8 @@ export const contentTemplates: ContentTemplate[] = [
 ,  
   {
     title: "SEO-Optimized Blog Article",
+    images:'/tempImages/article.png',
+
     description:
       "Generate comprehensive, SEO-friendly blog posts designed to rank well in search engines and engage your target audience",
     formInputs: [
@@ -247,6 +254,8 @@ export const contentTemplates: ContentTemplate[] = [
   },
   {
     title: "Marketing Ad Copy",
+    images:'/tempImages/ads.png',
+
     description: "Craft persuasive ad copy for various marketing channels",
     formInputs: [
       {
@@ -288,6 +297,8 @@ export const contentTemplates: ContentTemplate[] = [
   },
   {
     title: "Product Description",
+    images:'/tempImages/prodact.png',
+
     description: "Generate detailed and persuasive product descriptions",
     formInputs: [
       {
@@ -329,6 +340,8 @@ export const contentTemplates: ContentTemplate[] = [
   },
   {
     title: "Email Newsletter",
+    images:'/tempImages/email.png',
+
     description:
       "Create engaging email newsletters to keep your audience informed",
     formInputs: [
@@ -372,6 +385,8 @@ export const contentTemplates: ContentTemplate[] = [
   {
     title: "LinkedIn Post",
     description: "Craft professional and engaging LinkedIn posts",
+    images:'/tempImages/linkdin.png',
+
     formInputs: [
       {
         name: "topic",
@@ -421,6 +436,8 @@ export const contentTemplates: ContentTemplate[] = [
   },
   {
     title: "Instagram Caption",
+    images:'/tempImages/insta.png',
+
     description: "Generate engaging captions for Instagram posts",
     formInputs: [
       {
@@ -465,6 +482,8 @@ export const contentTemplates: ContentTemplate[] = [
   },
   {
     title: "YouTube Video Script",
+    images:'/tempImages/youtibe.png',
+
     description: "Create structured scripts for YouTube videos",
     formInputs: [
       {
@@ -514,110 +533,12 @@ export const contentTemplates: ContentTemplate[] = [
     aiPrompt:
       'Create a script for a {targetDuration}-minute YouTube video titled "{videoTitle}" about {topic}. Cover these key points: {keyPoints}. Include an engaging introduction, main content, and a conclusion with this call to action: {callToAction}.with  {wordCount}-word  on text editor format',
   },
-  {
-    title: "Podcast Episode Outline",
-    description: "Structure comprehensive outlines for podcast episodes",
-    formInputs: [
-      {
-        name: "episodeTitle",
-        type: "text",
 
-        placeholder: "Enter the title of your podcast episode",
-        required: true,
-      },
-      {
-        name: "wordCount",
-        type: "text",
-        placeholder: "Desired word count",
-        required: true,
-      },
-      {
-        name: "topic",
-        type: "textarea",
 
-        placeholder: "What is this episode about?",
-        required: true,
-      },
-      {
-        name: "guestInfo",
-        type: "textarea",
-
-        placeholder: "Information about the guest (if any)",
-        required: false,
-      },
-      {
-        name: "keySegments",
-        type: "textarea",
-
-        placeholder: "List main segments or talking points (one per line)",
-        required: true,
-      },
-      {
-        name: "duration",
-        type: "text",
-
-        placeholder: "Planned episode duration (in minutes)",
-        required: true,
-      },
-    ],
-    slug: "PODCAST_OUTLINE",
-    image: "/images/podcast-icon.png",
-    aiPrompt:
-      'Create a detailed outline for a {duration}-minute podcast episode titled "{episodeTitle}" about {topic}. Include an introduction, these key segments: {keySegments}, and a conclusion. If applicable, incorporate information about the guest: {guestInfo}.with  {wordCount}-word  on text editor format',
-  },
-  {
-    title: "Press Release",
-    description: "Craft professional press releases for various announcements",
-    formInputs: [
-      {
-        name: "headline",
-        type: "text",
-
-        placeholder: "Enter the main headline",
-        required: true,
-      },
-      {
-        name: "wordCount",
-        type: "text",
-        placeholder: "Desired word count",
-        required: true,
-      },
-      {
-        name: "announcement",
-        type: "textarea",
-
-        placeholder: "What are you announcing?",
-        required: true,
-      },
-      {
-        name: "companyInfo",
-        type: "textarea",
-
-        placeholder: "Brief company description",
-        required: true,
-      },
-      {
-        name: "quotes",
-        type: "textarea",
-
-        placeholder: "Any quotes from company representatives? (optional)",
-        required: false,
-      },
-      {
-        name: "contactInfo",
-        type: "textarea",
-
-        placeholder: "Contact information for media inquiries",
-        required: true,
-      },
-    ],
-    slug: "PRESS_RELEASE",
-    image: "/images/press-release-icon.png",
-    aiPrompt:
-      'Write a professional press release with the headline: "{headline}". The main announcement is: {announcement}. Include this company information: {companyInfo}. Incorporate these quotes if provided: {quotes}. End with the following contact information: {contactInfo}.with  {wordCount}-word  on text editor format',
-  },
   {
     title: "Company Bio",
+    images:'/tempImages/bio.png',
+
     description:
       "Generate compelling company biographies for various platforms",
     formInputs: [
@@ -670,6 +591,8 @@ export const contentTemplates: ContentTemplate[] = [
   },
   {
     title: "Job Description",
+    images:'/tempImages/job.png',
+
     description: "Create comprehensive and attractive job descriptions",
     formInputs: [
       {
@@ -728,6 +651,8 @@ export const contentTemplates: ContentTemplate[] = [
   },
   {
     title: "FAQ Page",
+    images:'/tempImages/faq.png',
+
     description: "Generate comprehensive FAQ pages for websites or products",
     formInputs: [
       {

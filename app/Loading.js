@@ -1,19 +1,23 @@
 import React from "react";
-import styles from "./page.module.css";
 
 const Loading = () => {
   return (
-<div className="terminal-loader">
-  <div className="terminal-header">
-    <div className="terminal-title">Status</div>
-    <div className="terminal-controls">
-      <div className="control close"></div>
-      <div className="control minimize"></div>
-      <div className="control maximize"></div>
+    <div className="h-screen w-full  mx-auto py-20">
+    <div
+      className="inline-block h-12 w-12 animate-spin rounded-full border-4 border-solid border-current border-r-transparent align-[-0.125em] motion-reduce:animate-[spin_1.5s_linear_infinite]"
+      role="status">
+      <span
+        className="!absolute !-m-px !h-px !w-px !overflow-hidden !whitespace-nowrap !border-0 !p-0 ![clip:rect(0,0,0,0)]"
+      >Loading...</span>
+    </div>
+    <div
+      className="inline-block h-12 w-12 animate-[spinner-grow_0.75s_linear_infinite] rounded-full bg-current align-[-0.125em] opacity-0 motion-reduce:animate-[spinner-grow_1.5s_linear_infinite]"
+      role="status">
+      <span
+        className="!absolute !-m-px !h-px !w-px !overflow-hidden !whitespace-nowrap !border-0 !p-0 ![clip:rect(0,0,0,0)]"
+      >Loading...</span>
     </div>
   </div>
-  <div className="text">Loading...</div>
-</div>
 
   );
 };

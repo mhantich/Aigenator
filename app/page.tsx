@@ -30,7 +30,7 @@ export default function Home() {
         <ContainerScroll
           titleComponent={
             <>
-              <h1 className="text-7xl mb-11 font-semibold text-black">
+              <h1 className="text-2xl lg:text-7xl mb-11 font-semibold text-black">
                 Unleash the power of <br /> Ai and browser all the template
               </h1>
             </>
@@ -46,7 +46,7 @@ export default function Home() {
           />
         </ContainerScroll>
       </div>
-      <section className="min-h-screen  flex items-center justify-center">
+      <section className="min-h-screen px-5 py-10 flex items-center justify-center">
         <section className="">
           <div className="flex flex-wrap md:py-36 items-center justify-center flex-col md:flex-row gap-8 md:overflow-hidden ">
             <CardContainer className="inter-var ">

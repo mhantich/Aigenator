@@ -11,7 +11,7 @@ export default function Component() {
       <div  className="md:px-6  w-full py-2 " >
          <Toaster />
         <div className="bg-gradient-to-r mb-4 flex-col gap-4 from-sky-100 to-pink-100 rounded-s-sm w-full py-20 text-white flex justify-center items-center md:px-11" >
-                <h1 className="text-4xl text-black font-bold capitalize">browser all the template</h1>
+                <h1 className=" text-xl text-center lg:text-4xl text-black font-bold capitalize">browser all the template</h1>
                 <div className="bg-white px-4 w-[50%] py-2 rounded-sm">
                     <input type="text" placeholder="seacch" className="text-black bg-transparent outline-none border-none " /> 
                 </div>

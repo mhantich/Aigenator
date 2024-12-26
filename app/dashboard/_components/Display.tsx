@@ -29,6 +29,7 @@ interface BaseFormInput {
   // ContentTemplate interface
   export interface ContentTemplate {
     title: string;
+    images:string
     description: string;
     formInputs: FormInput[];
     slug: string;
@@ -50,7 +51,7 @@ const Display: React.FC<ContentTemplateCardsProps> = ({ contentTemplates }) => {
   <Card  className="overflow-hidden">
     <CardContent className="p-0">
        <Image
-        src='/promemberscall.png'
+        src={template.images}
         width={400}
         height={225}
         alt={template.title}
